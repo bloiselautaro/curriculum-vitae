@@ -14,7 +14,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            background-color: var(--background-color);
+            background-color: black;
             color: var(--text-color);
             margin: 0;
             padding: 0;
@@ -56,4 +56,29 @@
             display: block;
             padding: 15px 20px;
             margin: 15px 0;
-            background-color:
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .link:hover {
+            background-color: #005f99;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Lautaro Bloise</h1>
+        <h2>Analista de Datos | Data Analyst</h2>
+        <p>Please select the CV version you wish to view:</p>
+        
+        <a href="cv-esp.pdf" class="link">Ver CV en Español</a>
+        <a href="cv-eng.pdf" class="link">View CV in English</a>
+    </div>
+</body>
+</html>
