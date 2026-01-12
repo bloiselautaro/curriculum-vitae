@@ -4,28 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lautaro Bloise - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #0077b6;
+            --linkedin-color: #0072b1;
+            --email-color: #333;
+            --whatsapp-color: #25d366;
             --text-color: #333;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            background-image: url('wallpaper.jpg');
-            background-size: cover;   
-            background-position: center; 
-            background-attachment: fixed; 
-            background-repeat: no-repeat; 
-            background-color: #000000;
-            color: var(--text-color);
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            
+           
+            background-image: url('wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 0;
         }
 
         .card {
@@ -35,13 +48,14 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             max-width: 450px;
             width: 90%;
+            z-index: 1;
+            position: relative;
         }
 
         h1 {
             color: var(--primary-color);
             margin-bottom: 5px;
             font-size: 2.2em;
-            letter-spacing: -1px;
         }
 
         h2 {
@@ -62,45 +76,60 @@
         }
 
         .link {
-            display: block;
-            padding: 16px 20px;
-            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px 20px;
+            margin: 10px 0;
             background-color: var(--primary-color);
             color: white;
             text-decoration: none;
             border-radius: 10px;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 119, 182, 0.2);
+            font-size: 0.95em;
         }
 
         .link:hover {
-            background-color: #005f99;
             transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0, 119, 182, 0.4);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .footer {
-            margin-top: 20px;
-            font-size: 0.85em;
-            color: #999;
-        }
+        .link-linkedin { background-color: var(--linkedin-color); }
+        .link-email { background-color: var(--email-color); }
+        .link-whatsapp { background-color: var(--whatsapp-color); }
+
+        .link-linkedin:hover { background-color: #005584; }
+        .link-email:hover { background-color: #444; }
+        .link-whatsapp:hover { background-color: #128c7e; }
+
+        i { font-size: 1.2em; }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>Lautaro Bloise</h1>
-        <h2>Data Analyst | IT Enthusiast</h2>
+        <h2>Data Analyst</h2>
         
-        <p class="instruction">Seleccioná la versión del CV que querés ver:</p>
-        <a href="Lautaro_Bloise_CV_ESP.pdf" class="link">📄 Ver CV en Español</a>
-        
-        <p class="instruction" style="margin-top: 20px;">Please select the CV version you wish to view:</p>
-        <a href="Lautaro_Bloise_CV_ENG.pdf" class="link">📄 View CV in English</a>
+        <p class="instruction">Descargar CV:</p>
+        <a href="Lautaro_Bloise_CV_ESP.pdf" class="link">
+            <i class="fas fa-file-pdf"></i> Español
+        </a>
+        <a href="Lautaro_Bloise_CV_ENG.pdf" class="link">
+            <i class="fas fa-file-pdf"></i> English
+        </a>
 
-        <div class="footer">
-            Actualizado / Updated 2026
-        </div>
+        <p class="instruction" style="margin-top: 25px;">Contacto:</p>
+        <a href="https://linkedin.com/in/lautaro-bloise/" target="_blank" class="link link-linkedin">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:laubloise@gmail.com" class="link link-email">
+            <i class="fas fa-envelope"></i> laubloise@gmail.com
+        </a>
+        <a href="https://wa.me/5491139103751" target="_blank" class="link link-whatsapp">
+            <i class="fab fa-whatsapp"></i> +54 9 11 3910 3751
+        </a>
     </div>
 </body>
 </html>
