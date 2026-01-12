@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lautaro Bloise - Currículum Vitae</title>
+    <title>Lautaro Bloise - CV</title>
     <style>
         :root {
             --primary-color: #0077b6;
             --text-color: #333;
-            --background-color: #f8f9fa;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            background-color: black;
+            background-color: #000000;
             color: var(--text-color);
             margin: 0;
             padding: 0;
@@ -27,9 +26,9 @@
         .card {
             background: white;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 450px;
             width: 90%;
         }
 
@@ -37,49 +36,66 @@
             color: var(--primary-color);
             margin-bottom: 5px;
             font-size: 2.2em;
+            letter-spacing: -1px;
         }
 
         h2 {
-            font-size: 1.1em;
-            color: #6c757d;
+            font-size: 1.2em;
+            color: #666;
             font-weight: 400;
             margin-top: 0;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
         }
 
-        p {
-            font-size: 1.05em;
-            margin-bottom: 25px;
+        .instruction {
+            font-size: 0.95em;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: 500;
         }
 
         .link {
             display: block;
-            padding: 15px 20px;
-            margin: 15px 0;
+            padding: 16px 20px;
+            margin: 12px 0;
             background-color: var(--primary-color);
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.1s ease;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 119, 182, 0.2);
         }
 
         .link:hover {
             background-color: #005f99;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 119, 182, 0.4);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.85em;
+            color: #999;
         }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>Lautaro Bloise</h1>
-        <h2>Analista de Datos | Data Analyst</h2>
-        <p>Selecciona la versión del CV que querés ver:</p>
-        <p>Please select the CV version you wish to view:</p>
+        <h2>Data Analyst | IT Enthusiast</h2>
         
-        <a href="Lautaro_Bloise_CV_ESP.pdf" class="link">Ver CV en Español</a>
-        <a href="Lautaro_Bloise_CV_ENG.pdf" class="link">View CV in English</a>
+        <p class="instruction">Seleccioná la versión del CV que querés ver:</p>
+        <a href="Lautaro_Bloise_CV_ESP.pdf" class="link">📄 Ver CV en Español</a>
+        
+        <p class="instruction" style="margin-top: 20px;">Please select the CV version you wish to view:</p>
+        <a href="Lautaro_Bloise_CV_ENG.pdf" class="link">📄 View CV in English</a>
+
+        <div class="footer">
+            Actualizado / Updated 2026
+        </div>
     </div>
 </body>
 </html>
